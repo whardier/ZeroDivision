@@ -3,20 +3,23 @@
 
 from distutils.core import setup
 
-from zerodivision import __version__
+from zerodivision.proxy.skel import __version__
 
 with open('README') as stream:
   long_desc = stream.read()
 
+requires = ['zerodivision']
+
 setup(
-    name='zerodivision',
+    name='zerodivision.proxy.skel',
     version=__version__,
     author='Shane R. Spencer',
     author_email='shane@bogomip.com',
-    packages=['zerodivision', 'zerodivision.proxy'],
-    url='https://github.com/whardier/zerodivision',
+    namespace_packages=['zerodivision', 'zerodivision.proxy'],
+    packages=['zerodivision.proxy.skel'],
+    url='https://github.com/whardier/zerodivision/proxies/skel/',
     license='MIT',
-    description='Python based zeromq proxy helpers',
+    description='Zerodivision Skel Proxy',
     long_description=long_desc,
     classifiers=[
         'Programming Language :: Python',
@@ -29,8 +32,6 @@ setup(
         'License :: OSI Approved :: MIT License',
         'Natural Language :: English',
         'Topic :: System :: Networking',
-        'Topic :: Database',
-        'Topic :: Communications',
         'Topic :: System :: Distributed Computing',
     ],
 )
