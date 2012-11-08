@@ -1,7 +1,7 @@
 ZeroDivision
 ============
 
-Python based zeromq proxy helpers
+Python based ZeroMQ proxy helpers
 
 Goal
 ====
@@ -19,7 +19,7 @@ Why?
 
   - Connect to remote systems running specific versions of software
   - Distribute work away from web frameworks
-    - On top of using mongodb.. also incorporate redis and reduction functions in remote calls and simply return the result
+    - On top of using MongoDM.. also incorporate Redis and reduction functions in remote calls and simply return the result
   - Allow fast and simple multi-protocol interaction with web frameworks
     - Create an XMPP client that integrates in with web frameworks easily
     - Offload report generation and send report via SMTP and store somewhere
@@ -27,22 +27,22 @@ Why?
 Requirements
 ============
 
-  - python
-  - pyzmq
+  - Python
+  - PyZMQ
 
 Recommended
 ===========
 
-  - inetd
+  - InetD
 
-Why inetd?
+Why InetD?
 ==========
 
-By creating a stdio socket pyzmq can utilize this socket and helpers can spin up simply by being connected to.
+By creating a stdio socket PyZMQ can utilize this socket and helpers can spin up simply by being connected to.
 
 Proxies
 =======
 
-- mongodb (pymongo)
-- redis (pyredis)
-- popen (local or via ssh)
+- MongoDM (PyMongo)
+- Redis (PyRedis)
+- Popen (local or via ssh)
